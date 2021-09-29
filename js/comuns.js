@@ -56,4 +56,20 @@ console.log(pessoas);
 // inserindo
 pessoas.splice(2,0, 'Ele', 'Nós');
 
+const coisas = ['eu', 123, true, 798,9, 'voce', false];
+console.log(coisas);
+
+
+function mensagem() {
+    alert('Ola, sou uma função');
+}
+
+// fazer uma copia do elemento HTML para manipular no JS
+
+// primeiro botão
+document.querySelector('#btn-1').addEventListener('click', mensagem);
+document.querySelector('#btn-2').addEventListener('dblclick', mensagem);
+document.querySelector('#btn-3').addEventListener('mouseover', mensagem);
+document.querySelector('#btn-4').addEventListener('mouseout', mensagem);
+
 
