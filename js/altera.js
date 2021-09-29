@@ -14,4 +14,20 @@ document.querySelector('#alterarConteudo').addEventListener('click', () => {
 })
 
 // INSERIR DADOS 
+document.querySelector('#insereConteudo').addEventListener('click', () => {
+    //recuperar valor digitado
+    const conteudo = document.querySelector('#novosDados').value;
 
+    // recuperar a div sera nela que faremos a gravação do novo valor
+    const nova = document.querySelector('#novaTag');
+
+    //criar um elemento h2
+    const novoH2 = document.createElement('h2');
+
+    //atribuir ao h2 o conteudo de texto digitado
+    novoH2.textContent = conteudo;
+
+    // adicionar o h2 criado na div
+    nova.appendChild(novoH2);
+
+})
