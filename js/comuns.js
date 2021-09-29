@@ -36,4 +36,24 @@ console.log(pessoas);
 console.log(pessoas.length);
 console.table(pessoas);
 
+// inserir apos o ultimo indice
+pessoas.push('Eu mesmo');
+console.log(pessoas);
+
+// Inserindo no inicio
+pessoas.unshift('Eu mesmo');
+console.log(pessoas);
+
+// retirando o primeiro indice
+const retirado = pessoas.shift();
+pessoas.shift();
+console.log(retirado);
+
+// retirando ou inserindo em uma posição
+pessoas.splice(2,2);
+console.log(pessoas);
+
+// inserindo
+pessoas.splice(2,0, 'Ele', 'Nós');
+
 
